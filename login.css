@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(85, 190, 85);
+}
+.navbar {
+  background-color: #fff;
+}
+
+.passenger {
+  margin-top: 10%;
+  text-align: center;
+}
+.container {
+  max-width: 30%;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.form {
+  text-align: left;
+}
+
+.btn {
+  width: 100%;
+  background-color: green;
+}
+
+.pass {
+  text-align: center;
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.pass a {
+  color: black;
+}

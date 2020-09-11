@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./Bootstrap/bootstrap-4.5.1-dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./Bootstrap/bootstrap-4.5.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./style6.css" />
+
+    <title>LOGIN</title>
+    <link rel="shortcut icon" href="./logo2.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <img class="logo" src="./logo2.png" alt="logo" />
+
+      <!-- hamburger menu -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarMenu"
+        aria-controls="#navbarMenu"
+        aria-expanded="false"
+        aria-label="Toggle Navigation"
+      >
+        <span class="navbar-toggle-icon"></span>
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <!-- add menu items and move it to the center -->
+      <div class="collapse navbar-collapse"></div>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="./index6.html" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">CONTACT US</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbardrop"
+              data-toggle="dropdown"
+            >
+              ACCOUNT
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./register.html">Register</a>
+              <a class="dropdown-item" href="./login.html">Sign In</a>
+              <a class="dropdown-item" href="#">Routes</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn menu-right-btn border" type="submit">
+            Register
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <div>
+      <h2 class="passenger">BUS TICKET BOOKING</h2>
+    </div>
+    <div class="container">
+      <form class="needs-validation form" novalidate>
+        <div class="form-group">
+          <label for="uname"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="uname"
+            placeholder="TRAVELLING FROM"
+            name="uname"
+            required
+          />
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="uname"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="uname"
+            placeholder="TRAVELLING TO"
+            name="uname"
+            required
+          />
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+          <label for="pwd"></label>
+          <input
+            type="date"
+            class="form-control"
+            id="pwd"
+            placeholder="TRAVELLING DATE"
+            name="pswd"
+            required
+          />
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <button class="btn btn-primary">Search</button>
+      </form>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Disable form submissions if there are invalid fields
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName("needs-validation");
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (
+              form
+            ) {
+              form.addEventListener(
+                "submit",
+                function (event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add("was-validated");
+                },
+                false
+              );
+            });
+          },
+          false
+        );
+      })();
+    </script>
+  </body>
+</html>

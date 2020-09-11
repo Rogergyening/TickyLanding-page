@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap-4.5.1-dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-4.5.1-dist/css/bootstrap.min.css"
+    />
+    <title>Image Slider</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          65deg,
+          rgb(183, 255, 183),
+          rgb(255, 131, 255)
+        );
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 100px;
+      }
+
+      .card-deck {
+        margin-top: 50px;
+        margin-bottom: 100px;
+      }
+
+      .text-view h4 {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        text-align: center;
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"
+      style="background-color: #1188dd;"
+    >
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button
+        class="navbar-toggler d-lg-none"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      ></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >HOME <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >ABOUT <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >CONTACT <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search"
+          />
+          <button class="btn btn-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="w-75 h-75">
+        <div class="carousel slide" id="carouselExample" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExample"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExample" data-slide-to="1"></li>
+            <li data-target="#carouselExample" data-slide-to="2"></li>
+            <li data-target="#carouselExample" data-slide-to="3"></li>
+            <li data-target="#carouselExample" data-slide-to="4"></li>
+            <li data-target="#carouselExample" data-slide-to="5"></li>
+            <li data-target="#carouselExample" data-slide-to="6"></li>
+            <li data-target="#carouselExample" data-slide-to="7"></li>
+            <li data-target="#carouselExample" data-slide-to="8"></li>
+            <li data-target="#carouselExample" data-slide-to="9"></li>
+            <li data-target="#carouselExample" data-slide-to="10"></li>
+            <li data-target="#carouselExample" data-slide-to="11"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/71224671_1474519169353076_6453340056189927424_n.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/IMG-20190325-WA0011.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/IMG-20190325-WA0017.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/IMG-20190325-WA0019.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/IMG-20190325-WA0024.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/IMG_1365.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/IMG_20190606_084322_9.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/IMG_7223.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/IMG_7285.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/IMG_7439.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/IMG_7442.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+          </div>
+          <a
+            href="#carouselExample"
+            class="carousel-control-prev"
+            data-slide="prev"
+            ><span class="carousel-control-prev-icon" aria-hidden="true"></span
+          ></a>
+
+          <a
+            href="#carouselExample"
+            class="carousel-control-next"
+            data-slide="next"
+            ><span class="carousel-control-next-icon" aria-hidden="true"></span
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-view">
+      <h4>IMAGE SLIDER</h4>
+    </div>
+
+    <div class="card-deck">
+      <div class="card bg-primary">
+        <div class="card-body text-center">
+          <img
+            class="card-img-top"
+            src="./images/IMG_7439.jpg"
+            alt="Card image"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Geoffrey Delali</h4>
+            <p class="card-text">Health Data Scientist || Web Developer</p>
+            <a href="#" class="btn btn-secondary">See Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-warning">
+        <div class="card-body text-center">
+          <img class="card-img-top" src="img_avatar1.png" alt="Card image" />
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-success">
+        <div class="card-body text-center">
+          <img class="card-img-top" src="img_avatar1.png" alt="Card image" />
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-danger">
+        <div class="card-body text-center">
+          <img class="card-img-top" src="img_avatar1.png" alt="Card image" />
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+      integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
